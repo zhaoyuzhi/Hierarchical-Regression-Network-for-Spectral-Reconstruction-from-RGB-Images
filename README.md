@@ -58,6 +58,14 @@ NTIRE 2020 Spectral Reconstruction Challenge
 * Pytorch 1.0.0
 * Cuda 8.0
 
+## Network architecture
+
+The main network:
+<img src="./img/network.png" width="500"/>
+
+The blocks used in main network:
+<img src="./img/network2.png" width="600"/>
+
 ## Train
 * Run `train.py`.
 * Change `baseroot` that contains training data.
@@ -66,7 +74,7 @@ NTIRE 2020 Spectral Reconstruction Challenge
 
 ## Test
 
-Note that the data should be first generated from different models (please run `test*.py`). Then compute the average of all results by running `ensemble_track*_8methods.py`.
+Note that the data should be first generated from different models (please run `test*.py`). Then compute the average of all results by running `ensemble_track*_8methods.py`. Finally, all the results for both tracks are saved in `./ensemble/track1` and `./ensemble/track2`.
 
 ### track 1 generation
 * Run `test1.py`.
@@ -81,8 +89,14 @@ Note that the data should be first generated from different models (please run `
 * Run `ensemble_track2_8methods.py`.
 * It will output 1 ensemble result of 8 generated data.
 
+For each track, we use the "best" epoch for ensemble:
+<img src="./img/compare.png" width="500"/>
+
 ## Visualize
 * Run `train_visualize.py` or `validation_visualize.py` or `test_visualize.py`.
+
+An example is like this:
+<img src="./img/result.png" width="500"/>
 
 ## Link to pre-trained models and testing results
 * Pre-trained models: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_ad_cityu_edu_hk/Em_8mi1dNLRKkaq2_lXsv8MBZbpuQ_IayEYs1OZe1fLx8A?e=b1T6UI). After downloading it, please put them to right folders.
