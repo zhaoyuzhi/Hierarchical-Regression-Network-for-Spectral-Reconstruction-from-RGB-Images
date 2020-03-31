@@ -17,6 +17,22 @@ def computeMRAE(groundTruth, recovered):
     return mrae
 
 
+def computeRMSE(groundTruth, recovered):
+    """
+    Compute RMSE between two images
+    :param groundTruth: ground truth reference image. (Height x Width x Spectral_Dimension)
+    :param recovered: image under evaluation. (Height x Width x Spectral_Dimension)
+    :return: RMSE between `recovered` and `groundTruth`.
+    """
+
+    assert groundTruth.shape == recovered.shape, "Size not match for groundtruth and recovered spectral images"
+
+    difference = (groundTruth - recovered) ** 2
+    rmse = np.sqrt(np.mean(difference))
+
+    return rmse
+
+
 def evalBackProjection(groundTruth, recovered, cameraResponse):
     """
     Score the colorimetric accuracy of a recovered spectral image vs. a ground truth reference image.
