@@ -6,7 +6,9 @@ import hdf5storage as hdf5
 
 import utils
 
-spectral = hdf5.loadmat('./ensemble/track1/ARAD_HS_0466.mat')
+#spectral = hdf5.loadmat('./ensemble/track1/ARAD_HS_0466.mat')
+spectral = hdf5.loadmat('./ensemble/track2/ARAD_HS_0502.mat')
+spectral = hdf5.loadmat('./ensemble/track2/ARAD_HS_0490.mat')
 choice = 3
 print(spectral)             # 'cube' is the data; 'band' is the spectral; 'norm_factor'
 img = spectral['cube']      # 31 channels (482,512,31)
