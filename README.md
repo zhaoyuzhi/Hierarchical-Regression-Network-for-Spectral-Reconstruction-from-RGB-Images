@@ -1,6 +1,14 @@
 # Hierarchical Regression Network for Spectral Reconstruction from RGB Images
 
-The README file for NTIRE 2020 Spectral Reconstruction Challenge of Team OrangeCat: Hierarchical Regression Network for Spectral Reconstruction from RGB Images
+The README file for NTIRE 2020 Spectral Reconstruction Challenge of Team OrangeCat: Hierarchical Regression Network for Spectral Reconstruction from RGB Images. Our method achieves the 1st place in track 2: real-world images.
+
+## HRNet architecture
+
+* The main network (different layers are connected by PixelShuffle and PixelUnShuffle):
+<img src="./img/network.png" width="1000"/>
+
+* The proposed ResDB and ResGB used in main network:
+<img src="./img/network2.png" width="1000"/>
 
 ## File structure
 
@@ -58,14 +66,6 @@ NTIRE 2020 Spectral Reconstruction Challenge
 * Pytorch 1.0.0
 * Cuda 8.0
 
-## Network architecture
-
-The main network:
-<img src="./img/network.png" width="500"/>
-
-The blocks used in main network:
-<img src="./img/network2.png" width="600"/>
-
 ## Train
 * Run `train.py`.
 * Change `baseroot` that contains training data.
@@ -90,14 +90,46 @@ Note that the data should be first generated from different models (please run `
 * It will output 1 ensemble result of 8 generated data.
 
 For each track, we use the "best" epoch for ensemble:
-<img src="./img/compare.png" width="500"/>
+<img src="./img/compare.png" width="1000"/>
 
 ## Visualize
 * Run `train_visualize.py` or `validation_visualize.py` or `test_visualize.py`.
 
-An example is like this:
-<img src="./img/result.png" width="500"/>
+## Generated spectral images
+* Track 1 comparison with other methods:
+<img src="./img/track1.png" width="1000"/>
+<img src="./img/add11.png" width="1000"/>
+<img src="./img/add21.png" width="1000"/>
+<img src="./img/add31.png" width="1000"/>
+* Track 2 comparison with other methods:
+<img src="./img/track2.png" width="1000"/>
+<img src="./img/add12.png" width="1000"/>
+<img src="./img/add22.png" width="1000"/>
+<img src="./img/add32.png" width="1000"/>
+* Track 1 all 31 bands (400nm - 700nm) of one image:
+<img src="./img/add41.png" width="1000"/>
+* Track 2 all 31 bands (400nm - 700nm) of one image:
+<img src="./img/add42.png" width="1000"/>
+
+## Generated infrared images
+<img src="./img/nir.png" width="1000"/>
 
 ## Link to pre-trained models and testing results
 * Pre-trained models: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_ad_cityu_edu_hk/Em_8mi1dNLRKkaq2_lXsv8MBZbpuQ_IayEYs1OZe1fLx8A?e=b1T6UI). After downloading it, please put them to right folders.
 * Testing results: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_ad_cityu_edu_hk/Emuplm0cx1FFurDAjSuIs00Bx_qr2d4erDFfvN_nDxeThg?e=hM5nqA)
+
+
+## Reference
+
+If you have any question, please do not hesitate to contact yzzhao2-c@my.cityu.edu.hk
+
+If you find this code useful to your research, please consider citing:
+
+```
+@article{zhao2020hierarchical,
+  title={Hierarchical Regression Network for Spectral Reconstruction from RGB Images},
+  author={Zhao, Yuzhi and Po, Lai-Man and Yan, Qiong and Liu, Wei and Lin, Tingyu},
+  booktitle={arXiv preprint arXiv:2005.04703},
+  year={2020},
+}
+```
