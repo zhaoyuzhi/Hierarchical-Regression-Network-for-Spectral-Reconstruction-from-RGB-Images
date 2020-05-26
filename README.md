@@ -133,3 +133,8 @@ If you find this code useful to your research, please consider citing:
   year={2020},
 }
 ```
+
+
+## CVPRW poster
+
+<img src="./img/poster.png" width="1000"/>
