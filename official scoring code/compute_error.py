@@ -103,11 +103,13 @@ def folder_img_rmse(generated_folder_path, groundtruth_folder_path):
 
 ### Validation data !!!
 
-generated_folder_path = "F:\\NTIRE 2020\\spectral reconstruction\\ensemble\\ensemble\\track2"
-#generated_folder_path = "F:\\NTIRE 2020\\spectral reconstruction\\compare\\Pix2Pix\\validation\\track1"
-#generated_folder_path = "F:\\NTIRE 2020\\spectral reconstruction\\compare\\UResNet\\validation\\track1"
+#generated_folder_path = "F:\\code\\NTIRE 2020\\spectral reconstruction\\ensemble\\ensemble\\track2"
+#generated_folder_path = "F:\\code\\NTIRE 2020\\spectral reconstruction\\compare\\Pix2Pix\\validation\\track2"
+#generated_folder_path = "F:\\code\\NTIRE 2020\\spectral reconstruction\\compare\\UResNet\\validation\\track1"
+#generated_folder_path = "F:\\code\\NTIRE 2020\\spectral reconstruction\\ablation study\\in\\validation\\track1"
+generated_folder_path = "F:\\code\\NTIRE 2020\\spectral reconstruction\\ablation study\\start channel equals to 16\\validation\\track1"
 
-groundtruth_folder_path = "F:\\NTIRE 2020\\spectral reconstruction\\NTIRE2020_Validation_Spectral"
+groundtruth_folder_path = "F:\\code\\NTIRE 2020\\spectral reconstruction\\NTIRE2020_Validation_Spectral"
 avg_mrae = folder_img_mrae(generated_folder_path, groundtruth_folder_path)
 avg_bpmrae = folder_img_bpmrae(generated_folder_path, groundtruth_folder_path)
 avg_rmse = folder_img_rmse(generated_folder_path, groundtruth_folder_path)
