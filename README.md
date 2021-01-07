@@ -2,6 +2,8 @@
 
 The README file for NTIRE 2020 Spectral Reconstruction Challenge of Team OrangeCat: Hierarchical Regression Network for Spectral Reconstruction from RGB Images. Our method achieves the 1st place in track 2: real-world images.
 
+Paper can be downloaded: https://openaccess.thecvf.com/content_CVPRW_2020/html/w31/Zhao_Hierarchical_Regression_Network_for_Spectral_Reconstruction_From_RGB_Images_CVPRW_2020_paper.html
+
 ## HRNet architecture
 
 * The main network (different layers are connected by PixelShuffle and PixelUnShuffle):
@@ -115,8 +117,8 @@ For each track, we use the "best" epoch for ensemble:
 <img src="./img/nir.png" width="1000"/>
 
 ## Link to pre-trained models and testing results
-* Pre-trained models: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_ad_cityu_edu_hk/Em_8mi1dNLRKkaq2_lXsv8MBZbpuQ_IayEYs1OZe1fLx8A?e=b1T6UI). After downloading it, please put them to right folders.
-* Testing results: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_ad_cityu_edu_hk/Emuplm0cx1FFurDAjSuIs00Bx_qr2d4erDFfvN_nDxeThg?e=hM5nqA)
+* Pre-trained models: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_my_cityu_edu_hk/Em_8mi1dNLRKkaq2_lXsv8MBZbpuQ_IayEYs1OZe1fLx8A?e=sbYdpa). After downloading it, please put them to right folders.
+* Testing results: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_my_cityu_edu_hk/Emuplm0cx1FFurDAjSuIs00Bx_qr2d4erDFfvN_nDxeThg?e=0Uxhgt)
 
 
 ## Reference
@@ -126,10 +128,10 @@ If you have any question, please do not hesitate to contact yzzhao2-c@my.cityu.e
 If you find this code useful to your research, please consider citing:
 
 ```
-@article{zhao2020hierarchical,
+@inproceedings{zhao2020hierarchical,
   title={Hierarchical Regression Network for Spectral Reconstruction from RGB Images},
   author={Zhao, Yuzhi and Po, Lai-Man and Yan, Qiong and Liu, Wei and Lin, Tingyu},
-  booktitle={arXiv preprint arXiv:2005.04703},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
   year={2020},
 }
 ```
