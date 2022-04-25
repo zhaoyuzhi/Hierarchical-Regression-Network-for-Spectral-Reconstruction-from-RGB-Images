@@ -308,7 +308,7 @@ class GlobalBlock(nn.Module):
         y = self.avg_pool(x).view(b, c)
         y = self.fc(y).view(b, c, 1, 1)
         y = x * y.expand_as(x)
-        y = self.conv2(x)
+        y = self.conv2(y)
         # addition
         out = 0.1 * y + residual
         return out
