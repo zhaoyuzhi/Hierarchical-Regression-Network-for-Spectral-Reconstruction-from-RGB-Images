@@ -5,8 +5,9 @@ The README file for NTIRE 2020 Spectral Reconstruction Challenge of Team OrangeC
 Paper can be downloaded: https://openaccess.thecvf.com/content_CVPRW_2020/html/w31/Zhao_Hierarchical_Regression_Network_for_Spectral_Reconstruction_From_RGB_Images_CVPRW_2020_paper.html
 
 ## Link to pre-trained models and testing results
-* Pre-trained models: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_my_cityu_edu_hk/Em_8mi1dNLRKkaq2_lXsv8MBZbpuQ_IayEYs1OZe1fLx8A?e=Fnjyjf). After downloading it, please put them to right folders.
-* Testing results: [OneDrive link](https://portland-my.sharepoint.com/:f:/g/personal/yzzhao2-c_my_cityu_edu_hk/Emuplm0cx1FFurDAjSuIs00Bx_qr2d4erDFfvN_nDxeThg?e=W0ficy)
+* Pre-trained models (track1): Link: https://pan.baidu.com/s/1OvifAbHzOtvYHrXapFsT1Q?pwd=ge23 Code: ge23
+* Pre-trained models (track2): Link: https://pan.baidu.com/s/17zjJR7eUDZIyE_9_vAN3uA?pwd=uthn Code: uthn
+* Testing results (track 1 and track 2): Link: https://pan.baidu.com/s/1shNpN4I_sqFPwrNf0yLZpg?pwd=g7dj Code: g7dj
 
 ## HRNet architecture
 
@@ -138,3 +139,4 @@ If you find this code useful to your research, please consider citing:
 ## CVPRW poster
 
 <img src="./img/poster.png" width="1000"/>
+
